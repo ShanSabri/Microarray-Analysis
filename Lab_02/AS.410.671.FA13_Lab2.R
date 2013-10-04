@@ -76,9 +76,9 @@ VPS8
 VPS8 <- t(scale(t(VPS8)))
 
 colnames(VPS8) <- c("10" , "30" , "50" , "70" , "80" , "90" , 
-					"100", "110", "120", "130", "140", "150",
-					"160", "170", "180", "190", "200", "210", 
-					"220", "230", "240", "250", "270", "290")
+   		    "100", "110", "120", "130", "140", "150",
+		    "160", "170", "180", "190", "200", "210", 
+		    "220", "230", "240", "250", "270", "290")
 					
 plot(c(1, ncol(VPS8)), range(VPS8), type = 'n', main = "Profile plot of VPS8", xlab = "Timepoints", ylab = "Expression", axes = F)
 axis(side = 1, at = c(1:ncol(VPS8)), labels = dimnames(VPS8)[[2]], cex.axis = 0.4, las = 2)
